@@ -1,1 +1,1 @@
-include ':app', ':FeatureList', ':CoreDi', ':featurescreenone'
+include ':app', ':FeatureList', ':CoreDi', ':featurescreenone', ':featurescreentwo'

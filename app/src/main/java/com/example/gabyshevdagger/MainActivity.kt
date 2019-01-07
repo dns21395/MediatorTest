@@ -13,9 +13,9 @@ class MainActivity : AppCompatActivity() {
 
         supportFragmentManager.beginTransaction().add(R.id.frameLayout,
             MediatorManager()
-                .featureScreenOneMediator
+                .featureScreenTwoMediator
                 .apiStub
-                .provideScreenOne() as Fragment
+                .provideScreenTwo() as Fragment
         ).commit()
     }
 }

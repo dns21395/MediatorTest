@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/MediatorTest.iml" filepath="$PROJECT_DIR$/MediatorTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/featurescreenone/featurescreenone.iml" filepath="$PROJECT_DIR$/featurescreenone/featurescreenone.iml" />
+      <module fileurl="file://$PROJECT_DIR$/featurescreentwo/featurescreentwo.iml" filepath="$PROJECT_DIR$/featurescreentwo/featurescreentwo.iml" />
     </modules>
   </component>
 </project>
