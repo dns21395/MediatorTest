@@ -6,6 +6,8 @@
       <module fileurl="file://$PROJECT_DIR$/FeatureList/FeatureList.iml" filepath="$PROJECT_DIR$/FeatureList/FeatureList.iml" />
       <module fileurl="file://$PROJECT_DIR$/MediatorTest.iml" filepath="$PROJECT_DIR$/MediatorTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CoreNavigation/corenavigation.iml" filepath="$PROJECT_DIR$/CoreNavigation/corenavigation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/coreutils/coreutils.iml" filepath="$PROJECT_DIR$/coreutils/coreutils.iml" />
       <module fileurl="file://$PROJECT_DIR$/featurescreenone/featurescreenone.iml" filepath="$PROJECT_DIR$/featurescreenone/featurescreenone.iml" />
       <module fileurl="file://$PROJECT_DIR$/featurescreentwo/featurescreentwo.iml" filepath="$PROJECT_DIR$/featurescreentwo/featurescreentwo.iml" />
     </modules>

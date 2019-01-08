@@ -1,1 +1,1 @@
-include ':app', ':FeatureList', ':CoreDi', ':featurescreenone', ':featurescreentwo'
+include ':app', ':FeatureList', ':CoreDi', ':featurescreenone', ':featurescreentwo', ':corenavigation', ':coreutils'

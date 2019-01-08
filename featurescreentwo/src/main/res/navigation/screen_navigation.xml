@@ -9,4 +9,6 @@
     </fragment>
     <fragment android:id="@+id/screenOneImpl" android:name="com.example.feature.screenone.ScreenOneImpl"
               android:label="ScreenOneImpl"/>
+    <fragment android:id="@+id/screenTwoImpl" android:name="com.example.feature.screentwo.ScreenTwoImpl"
+              android:label="ScreenTwoImpl"/>
 </navigation>
