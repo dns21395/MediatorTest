@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/CoreNavigation/corenavigation.iml" filepath="$PROJECT_DIR$/CoreNavigation/corenavigation.iml" />
       <module fileurl="file://$PROJECT_DIR$/coreutils/coreutils.iml" filepath="$PROJECT_DIR$/coreutils/coreutils.iml" />
       <module fileurl="file://$PROJECT_DIR$/featurescreenone/featurescreenone.iml" filepath="$PROJECT_DIR$/featurescreenone/featurescreenone.iml" />
+      <module fileurl="file://$PROJECT_DIR$/featurescreenthree/featurescreenthree.iml" filepath="$PROJECT_DIR$/featurescreenthree/featurescreenthree.iml" />
       <module fileurl="file://$PROJECT_DIR$/featurescreentwo/featurescreentwo.iml" filepath="$PROJECT_DIR$/featurescreentwo/featurescreentwo.iml" />
     </modules>
   </component>

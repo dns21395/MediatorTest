@@ -1,11 +1,9 @@
 package com.example.feature.screentwo
 
 import android.os.Bundle
-import android.view.LayoutInflater
+import android.util.Log
 import android.view.View
-import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.navigation.Navigation
 import com.example.coreutils.flow.SupportAppScreen
 import com.example.coreutils.global.BaseFragment
 import com.example.feature.screenone.ScreenOne
@@ -16,7 +14,7 @@ import javax.inject.Inject
 
 class MyFragment : BaseFragment() {
 
-    override val layoutRes: Int = R.layout.my_fragment
+    override val layoutRes: Int = R.layout.my_fragment_2
 
     @Inject
     lateinit var router: Router
@@ -33,8 +31,8 @@ class MyFragment : BaseFragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val myfragment = object : SupportAppScreen() {
-            override fun getFragment(): Fragment {
-                return thefragment as Fragment
+            override fun getFragment(): BaseFragment {
+                return thefragment as BaseFragment
             }
         }
 
@@ -42,6 +40,7 @@ class MyFragment : BaseFragment() {
             fragmentManager?.beginTransaction()!!
                 .add(R.id.frameLayout, thefragment as Fragment)
                 .commit()
+            Log.d("AMMA", "myfragment = $myfragment")
 //            router.newRootScreen(myfragment)
         }
     }

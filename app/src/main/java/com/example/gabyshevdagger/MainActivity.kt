@@ -7,6 +7,7 @@ import androidx.fragment.app.FragmentTransaction
 import androidx.navigation.NavOptions
 import androidx.navigation.Navigation
 import com.example.coreutils.flow.SupportAppNavigator
+import com.example.coreutils.global.BaseFragment
 import com.example.gabyshevdagger.di.MainComponent
 import kotlinx.android.synthetic.main.activity_main.*
 import ru.terrakok.cicerone.Navigator
@@ -17,12 +18,14 @@ import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {
 
-    @Inject lateinit var router: Router
+    @Inject
+    lateinit var router: Router
 
-    @Inject lateinit var navigatorHolder: NavigatorHolder
+    @Inject
+    lateinit var navigatorHolder: NavigatorHolder
 
-    private val currentFragment: Fragment?
-        get() = supportFragmentManager.findFragmentById(R.id.container) as? Fragment
+    private val currentFragment: BaseFragment?
+        get() = supportFragmentManager.findFragmentById(R.id.container) as? BaseFragment
 
     private val navigator: Navigator =
         object : SupportAppNavigator(this, supportFragmentManager, R.id.container) {
@@ -53,5 +56,9 @@ class MainActivity : AppCompatActivity() {
     override fun onPause() {
         navigatorHolder.removeNavigator()
         super.onPause()
+    }
+
+    override fun onBackPressed() {
+        currentFragment?.onBackPressed() ?: super.onBackPressed()
     }
 }

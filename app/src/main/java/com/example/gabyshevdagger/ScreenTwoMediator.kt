@@ -24,10 +24,6 @@ class ScreenTwoMediator(private val mediatorManager: MediatorManager) {
                 override fun getRouter(): Router {
                     return mediatorManager.coreNavigationMediator.apiStub.router()
                 }
-
-                override fun getNavigatorHolder(): NavigatorHolder {
-                    return mediatorManager.coreNavigationMediator.apiStub.navigatorHolder()
-                }
             }
         }
     }

@@ -11,5 +11,4 @@ class ScreenOneModule {
     @Provides
     @PerFeature
     fun provideScreenOne(): ScreenOne = ScreenOneImpl()
-
 }

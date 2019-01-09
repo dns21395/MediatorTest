@@ -8,6 +8,4 @@ interface ScreenTwoDeps {
     fun getScreenOne(): ScreenOne
 
     fun getRouter(): Router
-
-    fun getNavigatorHolder(): NavigatorHolder
 }
