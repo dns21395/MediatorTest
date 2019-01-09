@@ -7,7 +7,7 @@ import dagger.Module
 import dagger.Provides
 
 @Module
-class ScreenOneModule  {
+class ScreenOneModule {
     @Provides
     @PerFeature
     fun provideScreenOne(): ScreenOne = ScreenOneImpl()

@@ -6,6 +6,8 @@ import com.example.feature.screentwo.ScreenTwo
 import com.example.feature.screentwo.bindings.ScreenTwoApi
 import com.example.feature.screentwo.bindings.ScreenTwoDeps
 import com.example.feature.screentwo.di.ScreenTwoComponent
+import ru.terrakok.cicerone.NavigatorHolder
+import ru.terrakok.cicerone.Router
 
 class ScreenTwoMediator(private val mediatorManager: MediatorManager) {
     private val componentHolder = SingleComponentHolder<ScreenTwoDeps, ScreenTwoComponent> {
@@ -17,6 +19,14 @@ class ScreenTwoMediator(private val mediatorManager: MediatorManager) {
             object : ScreenTwoDeps {
                 override fun getScreenOne(): ScreenOne {
                     return mediatorManager.featureScreenOneMediator.apiStub.provideScreenOne()
+                }
+
+                override fun getRouter(): Router {
+                    return mediatorManager.coreNavigationMediator.apiStub.router()
+                }
+
+                override fun getNavigatorHolder(): NavigatorHolder {
+                    return mediatorManager.coreNavigationMediator.apiStub.navigatorHolder()
                 }
             }
         }

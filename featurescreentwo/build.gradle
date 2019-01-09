@@ -31,6 +31,8 @@ android {
 
 dependencies {
     implementation project(':CoreDi')
+    implementation project(':coreutils')
+    implementation project(':corenavigation')
     implementation project(':featurescreenone')
 
     implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
@@ -39,6 +41,8 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation "ru.terrakok.cicerone:cicerone:$cicerone"
+
 
     // Dagger
     implementation "com.google.dagger:dagger:$dagger"

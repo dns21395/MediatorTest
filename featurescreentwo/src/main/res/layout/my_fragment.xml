@@ -10,4 +10,9 @@
 
     <Button android:id="@+id/openScreenTwoButton" app:layout_constraintTop_toBottomOf="@id/text" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
 
+    <FrameLayout android:id="@+id/frameLayout" app:layout_constraintTop_toBottomOf="@id/openScreenTwoButton"
+                 app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                 app:layout_constraintBottom_toBottomOf="parent"
+                 android:layout_width="0dp" android:layout_height="0dp"></FrameLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
