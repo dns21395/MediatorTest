@@ -1,1 +1,1 @@
-include ':app', ':FeatureList', ':CoreDi', ':feature-screen-one-impl', ':feature-screen-two-impl', ':corenavigation', ':coreutils', ':featurescreenthree', ':feature-screen-one-api', ':feature-screen-two-api'
+include ':app', ':FeatureList', ':CoreDi', ':feature-screen-one-impl', ':feature-screen-two-impl', ':corenavigation', ':coreutils', ':feature-screen-three-impl', ':feature-screen-one-api', ':feature-screen-two-api', ':feature-screen-three-api'
