@@ -33,6 +33,7 @@ dependencies {
     implementation project(':CoreDi')
     implementation project(':coreutils')
     implementation project(':corenavigation')
+    implementation project(':feature-screen-two-api')
     implementation project(':feature-screen-one-api')
     implementation project(':feature-screen-one-impl')
 
