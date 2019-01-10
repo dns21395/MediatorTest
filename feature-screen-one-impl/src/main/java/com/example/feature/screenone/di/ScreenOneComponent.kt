@@ -2,9 +2,8 @@ package com.example.feature.screenone.di
 
 import com.example.core.di.PerFeature
 import com.example.feature.screenone.ScreenOneImpl
-import com.example.feature.screenone.bindings.ScreenOneApi
+import com.example.screen_one_api.ScreenOneApi
 import dagger.Component
-import java.lang.RuntimeException
 
 @Component(modules = [ScreenOneModule::class])
 @PerFeature

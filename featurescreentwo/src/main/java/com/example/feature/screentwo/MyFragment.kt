@@ -5,7 +5,7 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import com.example.coreutils.flow.SupportAppScreen
 import com.example.coreutils.global.BaseFragment
-import com.example.feature.screenone.ScreenOne
+import com.example.screen_one_api.ScreenOne
 import com.example.feature.screentwo.di.ScreenTwoComponent
 import kotlinx.android.synthetic.main.my_fragment.*
 import ru.terrakok.cicerone.Router

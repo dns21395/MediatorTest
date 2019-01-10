@@ -8,7 +8,8 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/CoreNavigation/corenavigation.iml" filepath="$PROJECT_DIR$/CoreNavigation/corenavigation.iml" />
       <module fileurl="file://$PROJECT_DIR$/coreutils/coreutils.iml" filepath="$PROJECT_DIR$/coreutils/coreutils.iml" />
-      <module fileurl="file://$PROJECT_DIR$/featurescreenone/featurescreenone.iml" filepath="$PROJECT_DIR$/featurescreenone/featurescreenone.iml" />
+      <module fileurl="file://$PROJECT_DIR$/feature-screen-one-api/feature-screen-one-api.iml" filepath="$PROJECT_DIR$/feature-screen-one-api/feature-screen-one-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/feature-screen-one-impl/feature-screen-one-impl.iml" filepath="$PROJECT_DIR$/feature-screen-one-impl/feature-screen-one-impl.iml" />
       <module fileurl="file://$PROJECT_DIR$/featurescreenthree/featurescreenthree.iml" filepath="$PROJECT_DIR$/featurescreenthree/featurescreenthree.iml" />
       <module fileurl="file://$PROJECT_DIR$/featurescreentwo/featurescreentwo.iml" filepath="$PROJECT_DIR$/featurescreentwo/featurescreentwo.iml" />
     </modules>

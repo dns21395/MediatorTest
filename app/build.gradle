@@ -27,7 +27,8 @@ android {
 dependencies {
     implementation project(':CoreDi')
     implementation project(':FeatureList')
-    implementation project(':featurescreenone')
+    implementation project(':feature-screen-one-api')
+    implementation project(':feature-screen-one-impl')
     implementation project(':featurescreentwo')
     implementation project(':corenavigation')
     implementation project(':coreutils')

@@ -1,12 +1,11 @@
 package com.example.gabyshevdagger
 
 import com.example.core.di.SingleComponentHolder
-import com.example.feature.screenone.ScreenOne
+import com.example.screen_one_api.ScreenOne
 import com.example.feature.screentwo.ScreenTwo
 import com.example.feature.screentwo.bindings.ScreenTwoApi
 import com.example.feature.screentwo.bindings.ScreenTwoDeps
 import com.example.feature.screentwo.di.ScreenTwoComponent
-import ru.terrakok.cicerone.NavigatorHolder
 import ru.terrakok.cicerone.Router
 
 class ScreenTwoMediator(private val mediatorManager: MediatorManager) {

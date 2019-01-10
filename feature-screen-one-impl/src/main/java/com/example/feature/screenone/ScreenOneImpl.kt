@@ -3,6 +3,7 @@ package com.example.feature.screenone
 import android.os.Bundle
 import android.view.View
 import com.example.coreutils.global.BaseFragment
+import com.example.screen_one_api.ScreenOne
 import javax.inject.Inject
 
 class ScreenOneImpl @Inject constructor() : BaseFragment(), ScreenOne {

@@ -1,8 +1,8 @@
 package com.example.gabyshevdagger
 
 import com.example.core.di.SingleComponentHolder
-import com.example.feature.screenone.ScreenOne
-import com.example.feature.screenone.bindings.ScreenOneApi
+import com.example.screen_one_api.ScreenOne
+import com.example.screen_one_api.ScreenOneApi
 import com.example.feature.screenone.di.ScreenOneComponent
 
 class ScreenOneMediator(mediatorManager: MediatorManager) {
