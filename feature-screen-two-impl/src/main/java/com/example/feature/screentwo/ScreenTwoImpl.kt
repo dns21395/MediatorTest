@@ -5,15 +5,16 @@ import androidx.fragment.app.Fragment
 import com.example.coreutils.flow.SupportAppScreen
 import com.example.coreutils.global.BaseFragment
 import com.example.coreutils.global.FlowFragment
-import com.example.screen_one_api.ScreenOne
 import com.example.feature.screentwo.di.ScreenTwoComponent
+import com.example.featurescreentwoapi.ScreenTwo
+import com.example.screen_one_api.ScreenOne
 import ru.terrakok.cicerone.Router
 import javax.inject.Inject
 
 class ScreenTwoImpl : FlowFragment(), ScreenTwo {
 
     @Inject
-    lateinit var thefragment: com.example.screen_one_api.ScreenOne
+    lateinit var thefragment: ScreenOne
 
     @Inject
     lateinit var router: Router

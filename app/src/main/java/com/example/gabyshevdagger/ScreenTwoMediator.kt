@@ -2,20 +2,20 @@ package com.example.gabyshevdagger
 
 import com.example.core.di.SingleComponentHolder
 import com.example.screen_one_api.ScreenOne
-import com.example.feature.screentwo.ScreenTwo
-import com.example.feature.screentwo.bindings.ScreenTwoApi
-import com.example.feature.screentwo.bindings.ScreenTwoDeps
+import com.example.feature.screentwo.di.ScreenTwoDependencies
 import com.example.feature.screentwo.di.ScreenTwoComponent
+import com.example.featurescreentwoapi.ScreenTwo
+import com.example.featurescreentwoapi.ScreenTwoApi
 import ru.terrakok.cicerone.Router
 
 class ScreenTwoMediator(private val mediatorManager: MediatorManager) {
-    private val componentHolder = SingleComponentHolder<ScreenTwoDeps, ScreenTwoComponent> {
+    private val componentHolder = SingleComponentHolder<ScreenTwoDependencies, ScreenTwoComponent> {
         ScreenTwoComponent.getNewInstance(it)
     }
 
     private fun provideComponent(): ScreenTwoComponent {
         return componentHolder.component ?: componentHolder.initAndGet {
-            object : ScreenTwoDeps {
+            object : ScreenTwoDependencies {
                 override fun getScreenOne(): ScreenOne {
                     return mediatorManager.featureScreenOneMediator.apiStub.provideScreenOne()
                 }

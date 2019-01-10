@@ -2,7 +2,7 @@ package com.example.feature.screentwo.di
 
 import com.example.core.di.PerFeature
 import com.example.coreutils.flow.FlowRouter
-import com.example.feature.screentwo.ScreenTwo
+import com.example.featurescreentwoapi.ScreenTwo
 import com.example.feature.screentwo.ScreenTwoImpl
 import dagger.Module
 import dagger.Provides
