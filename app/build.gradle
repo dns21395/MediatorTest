@@ -31,6 +31,8 @@ dependencies {
     implementation project(':feature-screen-one-impl')
     implementation project(':feature-screen-two-api')
     implementation project(':feature-screen-two-impl')
+    implementation project(':feature-screen-three-api')
+    implementation project(':feature-screen-three-impl')
     implementation project(':corenavigation')
     implementation project(':coreutils')
 
