@@ -1,7 +1,6 @@
 package com.example.feature.screentwo
 
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import androidx.fragment.app.Fragment
 import com.example.coreutils.flow.SupportAppScreen
@@ -40,7 +39,6 @@ class MyFragment : BaseFragment() {
             fragmentManager?.beginTransaction()!!
                 .add(R.id.frameLayout, thefragment as Fragment)
                 .commit()
-            Log.d("AMMA", "myfragment = $myfragment")
 //            router.newRootScreen(myfragment)
         }
     }
