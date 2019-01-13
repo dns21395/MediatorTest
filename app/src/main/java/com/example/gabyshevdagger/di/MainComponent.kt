@@ -2,6 +2,7 @@ package com.example.gabyshevdagger.di
 
 import com.example.gabyshevdagger.App
 import com.example.gabyshevdagger.MainActivity
+import com.example.gabyshevdagger.MainFragment
 import dagger.Component
 import javax.inject.Singleton
 
@@ -23,4 +24,5 @@ abstract class MainComponent : MainDeps {
 
     abstract fun inject(app: App)
     abstract fun inject(mainActivity: MainActivity)
+    abstract fun inject(mainFragment: MainFragment)
 }

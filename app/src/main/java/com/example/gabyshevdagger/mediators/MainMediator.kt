@@ -1,7 +1,7 @@
-package com.example.gabyshevdagger
+package com.example.gabyshevdagger.mediators
 
 import com.example.core.di.SingleComponentHolder
-import com.example.corenavigation.bindings.CoreNavigationApi
+import com.example.gabyshevdagger.MediatorManager
 import com.example.gabyshevdagger.di.MainComponent
 import com.example.gabyshevdagger.di.MainDeps
 import ru.terrakok.cicerone.NavigatorHolder

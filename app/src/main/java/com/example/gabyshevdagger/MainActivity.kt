@@ -44,8 +44,8 @@ class MainActivity : AppCompatActivity() {
         MainComponent.mainComponent.inject(this)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        router.newRootScreen(Screens.Main)
 
-        router.newRootScreen(Screens.TwoFlow)
     }
 
     override fun onResumeFragments() {

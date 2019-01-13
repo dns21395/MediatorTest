@@ -1,9 +1,10 @@
-package com.example.gabyshevdagger
+package com.example.gabyshevdagger.mediators
 
 import com.example.core.di.SingleComponentHolder
 import com.example.feature.list.SomeShit
 import com.example.feature.list.bindings.FeatureListApi
 import com.example.feature.list.di.MyComponent
+import com.example.gabyshevdagger.MediatorManager
 
 class FeatureListMediator(mediatorManager: MediatorManager) {
     private val componentHolder = SingleComponentHolder<Unit, MyComponent> {

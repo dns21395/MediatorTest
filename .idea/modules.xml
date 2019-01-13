@@ -8,6 +8,10 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/CoreNavigation/corenavigation.iml" filepath="$PROJECT_DIR$/CoreNavigation/corenavigation.iml" />
       <module fileurl="file://$PROJECT_DIR$/coreutils/coreutils.iml" filepath="$PROJECT_DIR$/coreutils/coreutils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/feature-screen-five-api/feature-screen-five-api.iml" filepath="$PROJECT_DIR$/feature-screen-five-api/feature-screen-five-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/feature-screen-five-impl/feature-screen-five-impl.iml" filepath="$PROJECT_DIR$/feature-screen-five-impl/feature-screen-five-impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/feature-screen-four-api/feature-screen-four-api.iml" filepath="$PROJECT_DIR$/feature-screen-four-api/feature-screen-four-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/feature-screen-four-impl/feature-screen-four-impl.iml" filepath="$PROJECT_DIR$/feature-screen-four-impl/feature-screen-four-impl.iml" />
       <module fileurl="file://$PROJECT_DIR$/feature-screen-one-api/feature-screen-one-api.iml" filepath="$PROJECT_DIR$/feature-screen-one-api/feature-screen-one-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/feature-screen-one-impl/feature-screen-one-impl.iml" filepath="$PROJECT_DIR$/feature-screen-one-impl/feature-screen-one-impl.iml" />
       <module fileurl="file://$PROJECT_DIR$/feature-screen-three-api/feature-screen-three-api.iml" filepath="$PROJECT_DIR$/feature-screen-three-api/feature-screen-three-api.iml" />
