@@ -10,6 +10,7 @@ import javax.inject.Singleton
 @Singleton
 abstract class CoreNavigationComponent : CoreNavigationApi {
     companion object {
+
         @JvmStatic
         fun getNewInstance(): CoreNavigationComponent {
             return DaggerCoreNavigationComponent.builder().build()

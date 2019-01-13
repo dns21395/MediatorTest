@@ -14,6 +14,4 @@ class MediatorManager {
     val featureScreenFourMediator by lazy { ScreenFourMediator(this) }
 
     val featureScreenFiveMediator by lazy { ScreenFiveMediator(this) }
-
-    val mainMediator by lazy { MainMediator(this) }
 }

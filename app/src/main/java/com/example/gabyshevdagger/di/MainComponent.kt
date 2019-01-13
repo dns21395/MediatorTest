@@ -7,17 +7,16 @@ import dagger.Component
 import javax.inject.Singleton
 
 @Component(
-    modules = [MainModule::class],
-    dependencies = [MainDeps::class]
+    modules = [MainModule::class]
 )
 @Singleton
-abstract class MainComponent : MainDeps {
+abstract class MainComponent {
     companion object {
         lateinit var mainComponent: MainComponent
 
         @JvmStatic
-        fun getNewInstance(deps: MainDeps): MainComponent {
-            mainComponent = DaggerMainComponent.builder().mainDeps(deps).build()
+        fun getNewInstance(): MainComponent {
+            mainComponent = DaggerMainComponent.builder().build()
             return mainComponent
         }
     }

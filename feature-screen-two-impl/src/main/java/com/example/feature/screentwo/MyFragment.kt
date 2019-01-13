@@ -42,4 +42,8 @@ class MyFragment : BaseFragment() {
 //            router.newRootScreen(myfragment)
         }
     }
+
+    override fun onBackPressed() {
+        router.exit()
+    }
 }

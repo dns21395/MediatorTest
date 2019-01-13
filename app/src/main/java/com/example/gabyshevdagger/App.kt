@@ -10,6 +10,6 @@ class App : Application() {
     }
 
     private fun initDI() {
-        MainComponent.getNewInstance(MediatorManager().mainMediator.apiStub).inject(this)
+        MainComponent.getNewInstance().inject(this)
     }
 }

@@ -3,7 +3,9 @@ package com.example.featurescreenfiveimpl.di
 import com.example.core.di.PerFeature
 import com.example.coreutils.flow.FlowRouter
 import com.example.featurescreenfiveapi.FragmentFive
-import com.example.featurescreenfiveimpl.FragmentFiveImpl
+import com.example.featurescreenfiveimpl.FragmentFiveFlowImpl
+import com.example.featurescreenfiveimpl.Screens
+import com.example.featurescreenfourapi.FragmentFour
 import dagger.Module
 import dagger.Provides
 import ru.terrakok.cicerone.Cicerone
@@ -14,7 +16,7 @@ import ru.terrakok.cicerone.Router
 class FragmentFiveModule {
     @Provides
     @PerFeature
-    fun provideFragmentFive(): FragmentFive = FragmentFiveImpl()
+    fun provideFragmentFive(): FragmentFive = FragmentFiveFlowImpl()
 
     @Provides
     @PerFeature
@@ -27,4 +29,10 @@ class FragmentFiveModule {
     @Provides
     @PerFeature
     fun provideNavigatorHolder(cicerone: Cicerone<FlowRouter>): NavigatorHolder = cicerone.navigatorHolder
+
+    @Provides
+    @PerFeature
+    fun provideScreens(fragmentFour: FragmentFour): Screens = Screens(
+        fragmentFour
+    )
 }

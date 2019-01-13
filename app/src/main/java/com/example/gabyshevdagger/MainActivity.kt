@@ -27,6 +27,9 @@ class MainActivity : AppCompatActivity() {
     private val currentFragment: BaseFragment?
         get() = supportFragmentManager.findFragmentById(R.id.container) as? BaseFragment
 
+    @Inject
+    lateinit var screens: Screens
+
     private val navigator: Navigator =
         object : SupportAppNavigator(this, supportFragmentManager, R.id.container) {
             override fun setupFragmentTransaction(
@@ -44,8 +47,7 @@ class MainActivity : AppCompatActivity() {
         MainComponent.mainComponent.inject(this)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        router.newRootScreen(Screens.Main)
-
+        router.newRootScreen(screens.Main())
     }
 
     override fun onResumeFragments() {

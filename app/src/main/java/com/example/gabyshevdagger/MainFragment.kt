@@ -14,6 +14,8 @@ class MainFragment : BaseFragment() {
 
     override val layoutRes: Int = R.layout.fragment_main
 
+    @Inject lateinit var screens: Screens
+
     override fun onCreate(savedInstanceState: Bundle?) {
         MainComponent.mainComponent.inject(this)
         super.onCreate(savedInstanceState)
@@ -23,11 +25,15 @@ class MainFragment : BaseFragment() {
         super.onViewCreated(view, savedInstanceState)
 
         buttonOpenTwo.setOnClickListener {
-            router.newRootScreen(Screens.TwoFlow)
+            router.navigateTo(screens.TwoFlow())
         }
 
         buttonOpenFive.setOnClickListener {
-            router.newRootScreen(Screens.FiveFlow)
+            router.navigateTo(screens.FiveFlow())
         }
+    }
+
+    override fun onBackPressed() {
+        router.exit()
     }
 }
